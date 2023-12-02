@@ -57,7 +57,7 @@ export const AdminDashboard = () => {
 
       // Log success message if the update was successful
       console.log("Values updated successfully");
-      // window.location.reload();
+      window.location.reload();
     } catch (error) {
       // Log an error message if there was an issue with the update
       console.error("Error updating values:", error.message);
