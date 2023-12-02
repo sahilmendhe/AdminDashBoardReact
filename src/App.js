@@ -2,10 +2,10 @@ import { AdminDashboard } from "./components/AdminDashboard";
 import "./App.css";
 import LoginPage from "./components/LoginPage";
 import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <Router basename="/subdirectory">
+    <Router>
       <div className="w-screen h-screen bg-black">
         <Routes>
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
